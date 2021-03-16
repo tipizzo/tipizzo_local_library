@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Accueil de la bibliothèque locale</h1>
+<p>Bienvenue à la bibliothèque locale</p>
+<h2>Contenu dynamique</h2>
+<p>La bibliothèque dispose des enregistrements suivants: </p>
+<ul>
+    <li><strong>Livres: </strong>{{ num_books }}</li>
+    <li><strong>Copies: </strong>{{ num_instances }}</li>
+    <li><strong>Copies disponibles: </strong>{{ num_instances_available }}</li>
+    <li><strong>Auteurs: </strong>{{ num_authors }}</li>
+</ul>
+{% endblock %}
